@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/Ebycow/mastodon-elona-aliasbot#readme",
   "devDependencies": {
+    "@types/node": "^10.12.18",
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "csv-parse": "^4.3.0",
+    "iconv-lite": "^0.4.24"
   }
 }
