@@ -1,0 +1,22 @@
+{
+  "name": "mastodon-elona-aliasbot",
+  "version": "1.0.0",
+  "description": "elonabot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ebycow/mastodon-elona-aliasbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ebycow/mastodon-elona-aliasbot/issues"
+  },
+  "homepage": "https://github.com/Ebycow/mastodon-elona-aliasbot#readme",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  }
+}
