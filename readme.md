@@ -6,7 +6,9 @@ node v10.7.0
 
 Clone or download
 
+```
 > npm i
+```
 
 Mastodonの設定>開発から新規アプリを作成してAccess Tokenを作成  
 ex. https://mastodon.social/settings/applications
@@ -17,9 +19,10 @@ export const ACCESS_TOKEN = '***';
 ```
 
 トランスパイル&起動
+```
 > npx tsc
-
 > npm start
+```
 
 # Alias Generator
 ```
