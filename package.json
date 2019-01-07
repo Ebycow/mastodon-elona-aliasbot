@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "csv-parse": "^4.3.0",
-    "iconv-lite": "^0.4.24"
+    "iconv-lite": "^0.4.24",
+    "mastodon": "^1.2.2"
   }
 }

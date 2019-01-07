@@ -44,7 +44,7 @@ export class ElonaNickName {
 
             // 行と列番号をランダム決定。データが空白ならやり直し。
             do {
-                frow = Math.floor( Math.random() * 389 );
+                frow = Math.floor( Math.random() * 388 );
                 fcol = Math.floor( Math.random() * 14 );
 
             } while( this.wordList[frow][fcol] === ("") || this.wordList[frow][fcol] === undefined );
@@ -113,7 +113,7 @@ export class ElonaNickName {
 
                     // 行番号をランダム決定。
                     do {
-                        lrow = Math.floor( Math.random() * 389 );
+                        lrow = Math.floor( Math.random() * 388 );
     
                     } while(
                         lrow === frow || // 先頭文字と行番号が同じならやり直し。
