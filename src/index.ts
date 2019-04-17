@@ -1,4 +1,5 @@
 import Masto from 'mastodon';
+import cron from 'node-cron';
 import argv from 'argv';
 import { ElonaNickName } from './aliasgen';
 import * as conf from './conf';
@@ -66,8 +67,12 @@ const M = new Masto({
 
 });
 
-M.post('statuses', {
-    visibility: 'unlisted',
-    status: n.reroll()[0],
+cron.schedule('* */1 * * *', () => {
+    M.post('statuses', {
+        visibility: 'unlisted',
+        status: n.reroll()[0],
+    
+    });
 
 });
+

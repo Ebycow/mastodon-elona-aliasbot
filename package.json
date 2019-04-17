@@ -20,12 +20,14 @@
   "devDependencies": {
     "@types/argv": "0.0.4",
     "@types/node": "^10.12.18",
+    "@types/node-cron": "^2.0.2",
     "typescript": "^3.2.2"
   },
   "dependencies": {
     "argv": "0.0.2",
     "csv-parse": "^4.3.0",
     "iconv-lite": "^0.4.24",
-    "mastodon": "^1.2.2"
+    "mastodon": "^1.2.2",
+    "node-cron": "^2.0.3"
   }
 }
