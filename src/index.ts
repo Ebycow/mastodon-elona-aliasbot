@@ -1,4 +1,4 @@
-import Masto from 'mastodon';
+const Masto = require('mastodon');
 import cron from 'node-cron';
 import argv from 'argv';
 import { ElonaNickName } from './aliasgen';
@@ -67,12 +67,15 @@ const M = new Masto({
 
 });
 
-cron.schedule('* */1 * * *', () => {
+// cron.schedule('* * * * *', () => {
     M.post('statuses', {
         visibility: 'unlisted',
         status: n.reroll()[0],
     
     });
 
-});
+// }, {
+//     timezone : "Asia/Tokyo"
+// });
 
+console.log("こんにちにゃ！");

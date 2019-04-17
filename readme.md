@@ -17,7 +17,7 @@ ex. https://mastodon.social/settings/applications
 
 ```
 > npx tsc
-> node dist/index --token='***' --api 'https://mastodon.social/api/v1/'
+> node dist/index --token='***' --api='https://mastodon.social/api/v1/'
 ```
 
 または、都合に応じて/src内のconf.tsにtokenとapiを設定
