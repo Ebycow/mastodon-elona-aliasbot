@@ -67,15 +67,15 @@ const M = new Masto({
 
 });
 
-// cron.schedule('* * * * *', () => {
+cron.schedule('*/30 * * * *', () => {
     M.post('statuses', {
         visibility: 'unlisted',
         status: n.reroll()[0],
     
     });
 
-// }, {
-//     timezone : "Asia/Tokyo"
-// });
+}, {
+    timezone : "Asia/Tokyo"
+});
 
 console.log("こんにちにゃ！");
