@@ -13,9 +13,17 @@ Clone or download
 Mastodonの設定>開発から新規アプリを作成してAccess Tokenを作成  
 ex. https://mastodon.social/settings/applications
 
-/src内に以下の内容を記述したconf.tsを配置
+トランスパイル＆tokenとapiの場所（下記例は.socialの場合）を指定して起動
+
 ```
-export const ACCESS_TOKEN = '***';
+> npx tsc
+> node dist/index --token='***' --api 'https://mastodon.social/api/v1/'
+```
+
+または、都合に応じて/src内のconf.tsにtokenとapiを設定
+```
+export const ACCESS_TOKEN: string | undefined = '***';
+export const API_URL: string | undefined = 'https://mstdn.jp/api/v1/';
 ```
 
 トランスパイル&起動
@@ -23,6 +31,8 @@ export const ACCESS_TOKEN = '***';
 > npx tsc
 > npm start
 ```
+
+引数を指定した場合、そっちが優先される
 
 # Alias Generator
 ```
