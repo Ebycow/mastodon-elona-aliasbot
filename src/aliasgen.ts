@@ -122,7 +122,7 @@ export class ElonaNickName {
                     );
     
                     // 列番号を決定。先頭文字の列番号が10未満ならrnd(2)、それ以外は10+rnd(2)で設定。
-                    if(fcol > 10) {
+                    if(fcol < 10) {
                         lcol = Math.floor( Math.random() * 2 );
                     } else {
                         lcol = Math.floor( Math.random() * 2 ) + 10;
